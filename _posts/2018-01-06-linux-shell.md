@@ -4,7 +4,7 @@ title: Shell 编程基础
 date: 2018-01-05 00:00:00 +0300
 description: 这篇文章主要介绍了Linux编程的基础：基本语法、条件控制、循环等知识的理解。
 img: shell.jpg # Add image post (optional)
-tags: [Linux, shell] # add tag
+tags: [Linux, Shell] # add tag
 ---
 
 >The time of life is short; to spend that shortness basely, it would be too long. William Shakespeare <br>
