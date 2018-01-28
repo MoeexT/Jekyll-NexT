@@ -3,7 +3,7 @@ layout: post
 title: MySQL 进阶
 date: 2018-01-06 00:00:00 +0300
 description: MySQL的进阶知识
-img: caspar-rubin-database.jpg # Add image post (optional)
+img: 2018-01-05-database.jpg # Add image post (optional)
 tags: [MySQL, Database] # add tag
 ---
 

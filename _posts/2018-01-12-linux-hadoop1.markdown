@@ -3,7 +3,7 @@ layout: post
 title: 大数据——Hadoop 的安装
 date: 2018-01-12 00:00:00 +0300
 description: Linux 简介以及基本命令介绍
-img: Hadoop_logo.png # Add image post (optional)
+img: 2018-01-12-hadoop-logo.png # Add image post (optional)
 tags: [Linux, Hadoop, Bigdata] # add tag
 ---
 

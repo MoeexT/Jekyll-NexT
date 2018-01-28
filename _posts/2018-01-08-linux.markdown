@@ -3,7 +3,7 @@ layout: post
 title: Linux——万物皆文件
 date: 2018-01-08 00:00:00 +0300
 description: Linux 简介以及基本命令介绍
-img: linux.jpg # Add image post (optional)
+img: 2018-01-08-ubuntu.jpg # Add image post (optional)
 tags: [Linux] # add tag
 ---
 

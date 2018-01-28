@@ -3,7 +3,7 @@ layout: post
 title: Python 自动登陆 WiFi 和 拨号
 date: 2018-01-12 00:00:00 +0300
 description: 用Python发送http请求实现登陆WiFi和拨号
-img: handshake-2009195_1280.png # Add image post (optional)
+img: 2018-01-24-handshake.png # Add image post (optional)
 tags: [Python, 网络编程] # add tag
 ---
 
