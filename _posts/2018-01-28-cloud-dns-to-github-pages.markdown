@@ -3,8 +3,8 @@ layout: post
 title: 给 GitHub Pages 博客配置云解析
 date: 2018-01-28 00:00:00 +0800
 description: 
-img: pencial.jpg
-tags: [Python, 爬虫] 
+img: 2018-01-28-pencial.jpg
+tags: [Github Pages] 
 ---
 
 > Thank the flame for its light, but do not fotget the lampholder standing in the shade with coonstancy of patience. <br>
