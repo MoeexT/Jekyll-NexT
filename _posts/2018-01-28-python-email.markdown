@@ -71,7 +71,7 @@ except smtplib.SMTPException as e:
     print e
 ```
 
-接收到的邮件如图：![example-receiver]({{site.url}}/assets/img/insert/2018-01-28-example1.png)
+接收到的邮件如图：![example-receiver]({http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example1.png)
 
 ### 发送附件
 
@@ -121,7 +121,7 @@ except smtplib.SMTPException,e:
     print e 
 ```
 
-效果图：![example-receiver]({{site.url}}/assets/img/insert/2018-01-28-example2.png)
+效果图：![example-receiver](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example2.png)
 
 ### 发送 HTML 附件
 
@@ -176,7 +176,7 @@ except smtplib.SMTPException,e:
 
 ```
 
-结果（你猜猜内容是啥😄）：![exp3]({{site.url}}/assets/img/insert/2018-01-28-example3.png)
+结果（你猜猜内容是啥😄）：![exp3](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example3.png)
 
 ### 总结
 

@@ -13,7 +13,7 @@ I would like to pay tribute to Artem Sheludko for this article.
 谨以此文向博客主题的作者 Artem Sheludko 致敬。<br>
 浏览该[主题](http://jekyllthemes.org/themes/flexible-jekyll/),和[GitHub](https://github.com/artemsheludko/flexible-jekyll)
 
-![the Auther]({{site.baseurl}}/assets/img/insert/2018-01-04-david-freeman.jpg)
+![the Auther](http://p3oi9yqso.bkt.clouddn.com/2018-01-04-david-freeman.jpg)
 
 # GitHub
 *章鱼猫* <br>

@@ -21,7 +21,7 @@ tags: [Github Pages]
 
 在阿里云的控制台找到 “云解析 DNS” 一栏，在域名下添加解析如下：
 
-![cloud-dns]({{site-url}}/assets/img/insert/2018-01-08-cloud-dns.png)
+![cloud-dns](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-cloud-dns.png)
 
 * 设置主机记录www，记录类型为A，记录值是IP192.30.252.153。其中192.30.252.153是Github Pages服务器指定的IP地址，访问该IP地址即表示访问Github Pages
 * 设置主机记录www，记录类型为A，记录值是IP192.30.252.154。
