@@ -25,60 +25,60 @@ https://pan.baidu.com/s/1ds0aFs
 
 ### X战警：第一战
 
-![]("https://img1.doubanio.com/view/photo/sqxs/public/p2310314267.webp")
+![](https://img1.doubanio.com/view/photo/sqxs/public/p2310314267.webp)
 
 链接: https://pan.baidu.com/s/1pNl4luV 密码: um1i
 
 ### 金刚狼
 
-![]("https://img1.doubanio.com/view/photo/sqxs/public/p1817633637.webp")
+![](https://img1.doubanio.com/view/photo/sqxs/public/p1817633637.webp)
 
 链接: https://pan.baidu.com/s/1dGiQ4xV 密码: ixbb
 
 ### X战警
 
-![]("https://img1.doubanio.com/view/photo/sqxs/public/p2151474239.webp")
+![](https://img1.doubanio.com/view/photo/sqxs/public/p2151474239.webp)
 
 链接: https://pan.baidu.com/s/1pMRlxG3 密码: 3vy9
 
 ### X战警2
 
-![]("https://img1.doubanio.com/view/photo/sqxs/public/p726783507.webp")
+![](https://img1.doubanio.com/view/photo/sqxs/public/p726783507.webp)
 
 链接: https://pan.baidu.com/s/1htt9Iew 密码: knb6
 
 ### X战警3：背水一战
 
-![]("https://img3.doubanio.com/view/photo/l/public/p2230029851.webp")
+![](https://img3.doubanio.com/view/photo/l/public/p2230029851.webp)
 
 链接: https://pan.baidu.com/s/1i7la0pn 密码: awec
 
 ### 金刚狼2
 
-![]("https://img1.doubanio.com/view/photo/l/public/p2151837688.webp")
+![](https://img1.doubanio.com/view/photo/l/public/p2151837688.webp)
 
 链接: https://pan.baidu.com/s/1i7la0pn 密码: awec
 
 ### X战警：逆转未来
 
-![]("https://img1.doubanio.com/view/photo/l/public/p2184540188.webp")
+![](https://img1.doubanio.com/view/photo/l/public/p2184540188.webp)
 
 链接: https://pan.baidu.com/s/1i7la0pn 密码: awec
 
 ### X战警:天启
 
-![]("https://img1.doubanio.com/view/photo/l/public/p2348883437.webp")
+![](https://img1.doubanio.com/view/photo/l/public/p2348883437.webp)
 
 链接: https://pan.baidu.com/s/1nw4oRfN 密码: jivk
 
 ### 金刚狼3
 
-![]("https://img3.doubanio.com/view/photo/l/public/p2431980130.webp")
+![](https://img3.doubanio.com/view/photo/l/public/p2431980130.webp)
 
 链接: https://pan.baidu.com/s/1ht1bpNe 密码: 35m2
 
 ### 死侍
 
-![]("https://img1.doubanio.com/view/photo/l/public/p2256637468.webp")
+![](https://img1.doubanio.com/view/photo/l/public/p2256637468.webp)
 
 链接: https://pan.baidu.com/s/1bqh8E0v 密码: g24v
