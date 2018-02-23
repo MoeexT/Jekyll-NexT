@@ -4,7 +4,7 @@ title: Thank The Auther
 date: 2018-01-04 00:00:00 +0300
 description: 这是从Wordpress 向 GitHub 进发的一小步，但这是10#B722大家庭探索新知的一大步 # Add post description (optional)
 img: coffee.jpg #david-freeman.jpg 
-tags: [Programming, Learn] 
+tags: [] 
 ---
 
 
@@ -20,7 +20,7 @@ I would like to pay tribute to Artem Sheludko for this article.
 **喜欢GitHub的画风**
 
 根据下图所描述的情形，我们可以想象：元旦的晚上，狗哥欢渡春宵彻夜不归。寝室只剩一半人口，闪闪的彩灯让人倍感寂寞。我（中间最帅的那位）拉开正在搞基的两人（两边），拍下了这副**鄙视图**。注：他们俩在鄙视我
-![I and My friends]({{site.baseurl}}/assets/img/insert/2018-01-04-722.jpg)
+![I and My friends](http://p3oi9yqso.bkt.clouddn.com/2018-01-04-722.jpg)
 
 下边的几种语言，你喜欢哪个？
 * [Java](https://www.imooc.com/course/list?c=java)
