@@ -8,7 +8,7 @@ img: 2018-02-23-x-man-to-bingxin.jpg
 > "You are the big drop of dew under the lotus leaf, I am the smaller one on its upper side," said the dewdrop to the lake. <br>
 > 露水对露珠道；“你是荷叶下面的大露珠，我是在荷叶上面的较小的露珠。”——《飞鸟集》
 
-全系列百度云链接: https://pan.baidu.com/s/1jJv74qE 密码: u5u4
+全系列百度云链接: https://pan.baidu.com/s/1eTV75ia 密码: ntd5
 
 下方为单个视频链接，内容一样，如果怕麻烦的话可以直接拿走上方文件夹(づ￣ 3￣)づ
 
@@ -73,10 +73,10 @@ img: 2018-02-23-x-man-to-bingxin.jpg
 
 ![](https://img3.doubanio.com/view/photo/l/public/p2431980130.webp)
 
-链接: https://pan.baidu.com/s/1jJr3KgA 密码: 54nw
+链接: https://pan.baidu.com/s/1ht1bpNe 密码: 35m2
 
 **死侍**
 
 ![](https://img1.doubanio.com/view/photo/l/public/p2256637468.webp)
 
-链接: https://pan.baidu.com/s/1smuDrbB 密码: jjnp
+链接: https://pan.baidu.com/s/1bqh8E0v 密码: g24v

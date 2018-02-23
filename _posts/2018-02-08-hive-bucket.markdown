@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hive 分桶
+title: Hive 分桶（待优化）
 subtitle: 哈哈哈
 date: 2018-02-06 00:00:00 +0800
 description: 上课跟着老师写的博客 QQ：3916188 
