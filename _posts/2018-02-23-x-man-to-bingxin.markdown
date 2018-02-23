@@ -10,6 +10,8 @@ img: 2018-02-23-x-man-to-bingxin.jpg
 
 全系列百度云链接: https://pan.baidu.com/s/1eTV75ia 密码: ntd5
 
+https://pan.baidu.com/s/1ds0aFs
+
 下方为单个视频链接，内容一样，如果怕麻烦的话可以直接拿走上方文件夹(づ￣ 3￣)づ
 
 **X战警上映顺序**
