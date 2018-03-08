@@ -11,7 +11,7 @@ tags: [Python]
 > He who wants to do good knocks at the gate; he who loves finds the gate open. <br>
 > 那些想做好人的，在门外敲着门，那爱人的，看见们敞着。——《飞鸟集》
 
-### 爬虫类
+### 爬虫类 (8)
 
 库名 | 作用
 urllib/urllib2 | Python 标准库，提供了大部分 HTTP 功能
@@ -22,7 +22,7 @@ html5lib | HTML 和 XML 文档处理工具，几个解析工具的<a href="http:
 selenium | 自动化测试工具，适用于动态爬虫，需配合浏览器（例如 phantomjs，无界面浏览器）使用
 scrapy | 著名的爬虫框架
 
-### 科学计算及图像处理
+### 科学计算及图像处理 (6)
 
 库名 | 作用
 matplotlib | Python 的 2D绘图库，也支持 3D
@@ -32,21 +32,21 @@ scipy | 高级的科学计算库，和Numpy联系密切
 pillow：PIL | 具有强大的图像处理能力
 opencv：CV2 | 一个C++库，用于实时处理计算机视觉方面的问题
 
-### 深度学习
+### 深度学习 (4)
 
 库名 | 作用
 tensorflow | 膜拜谷歌大佬；有GPU版，需安装 CUDA
 scikit-learn | 基于NumPy, SciPy, Matplotlib的开源机器学习工具包（没用过）
 caffee/caffee2 | 常用于图像分类（没用过）
 
-### 网络编程
+### 网络编程 (4)
 
 库名 | 作用
 socket | 套接字，可以访问底层操作系统Socket接口的全部方法
 socketServer | 高级别网络服务模块，可以简化网络服务器的开发
 smtplib、email | 封装了 SMTP 协议的邮件客户端
 
-### WEB 框架（不了解）
+### WEB 框架 (3，不了解)
 
 库名 | 作用
 web | 很简单的web框架
@@ -54,7 +54,7 @@ Flask | 轻量级框架
 Djando | 全能型框架（没用过）
 最简单的服务器| python -m SimpleHTTPServer 8080
 
-### 其他
+### 其他(28)
 
 库名 | 作用
 pip | Python 标准库，第三方库安装工具
@@ -68,7 +68,7 @@ jieba | 中文分词
 markdown | 将 markdown 格式的文档转化为结构化的xhtml 或 html
 PyQRCode | 二维码相关库
 wordcloud | 生成词云
-traceback | debug 工具
+traceback | 代码debug 工具
 time、datetime | Python 标准库，时间处理
 python-dateutil | 时间处理工具包
 pywin32 | 提供了 python 操作 Windows 的接口
