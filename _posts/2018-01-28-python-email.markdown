@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python 使用 SMTP 发送邮件
+title: Python SMTP 发送邮件
 date: 2018-01-28 00:00:00 +0800
 description: 自动化发邮件，不用登陆客户端
 img: 2018-01-28-python-email.jpg

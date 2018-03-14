@@ -1,6 +1,6 @@
 ---
 layout: post
-title: X-战警全系列（分链接已废）
+title: X-战警（链接已废）
 date: 2018-02-23 00:00:00 +0800
 img: 2018-02-23-x-man-to-bingxin.jpg
 ---

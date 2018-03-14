@@ -75,6 +75,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
@@ -83,6 +84,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-sitemap
   jemoji
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    1.16.0

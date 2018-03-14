@@ -3,7 +3,7 @@ layout: post
 title: Thank The Auther
 date: 2018-01-04 00:00:00 +0300
 description: 这是从Wordpress 向 GitHub 进发的一小步，但这是10#B722大家庭探索新知的一大步 # Add post description (optional)
-img: coffee.jpg #david-freeman.jpg 
+img: 2018-01-04-coffee.jpg #david-freeman.jpg 
 tags: [] 
 ---
 

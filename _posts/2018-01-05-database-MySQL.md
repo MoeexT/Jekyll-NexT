@@ -4,7 +4,7 @@ title: MySQL 进阶
 date: 2018-01-06 00:00:00 +0300
 description: MySQL的进阶知识
 img: 2018-01-05-database.jpg # Add image post (optional)
-tags: [MySQL, Database] # add tag
+tags: [MySQL] # add tag
 ---
 
 >My day is done, and I am like a boat drawn on the beach, listening to the dance-music of the tide in the evening. <br>
