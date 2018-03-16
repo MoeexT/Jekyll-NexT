@@ -3,6 +3,7 @@ layout: post
 title: X-战警（链接已废）
 date: 2018-02-23 00:00:00 +0800
 img: 2018-02-23-x-man-to-bingxin.jpg
+tags: [我自己] 
 ---
 
 > "You are the big drop of dew under the lotus leaf, I am the smaller one on its upper side," said the dewdrop to the lake. <br>
