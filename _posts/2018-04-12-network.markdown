@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Scala 函数
+title: 计算机网络
 subtitle: 爱哭的嘎达傻空了大概看到过
 date: 2018-03-18 00:00:00 +0800
-description: Scala,又是一个骚东西。这里记录的是在 Scala 中出现了但在 Python 和其他正经语言中没有出现的语法
+description: 这里记录的是牛客网刷题遇到的不会的东西
 categories:
 - Scala
 tags: [Scala, Spark] 
