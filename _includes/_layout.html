@@ -82,5 +82,15 @@
   {% include _third-party/mathjax.html %}
   {% include _third-party/scroll-cookie.html %}
   {% include _third-party/exturl.html %}
+  
+  <!-- 这里添加了两个外部js: 鼠标特效小心心和从@神奇的战士那里抄来的动态title -->
+
+  {% if site.data.js_settings.click_heart %}
+	  <script type="text/javascript" src="{{ site.assets | relative_url }}/assets/lib/canvas-mine/click-heart.js"></script>
+  {% endif%}
+
+  {% if site.data.js_settings.dynamic_title %}
+	  <script type="text/javascript" src="{{ site.assets | relative_url }}/assets/lib/canvas-mine/dynamic-title.js"></script>
+  {% endif%}
 </body>
 </html>
