@@ -2,20 +2,19 @@
 layout: post
 title: Thank The Auther
 date: 2018-01-04 00:00:00 +0300
-description: 这是从Wordpress 向 GitHub 进发的一小步，但这是10#B722大家庭探索新知的一大步 # Add post description (optional)
-img: 2018-01-04-coffee.jpg #david-freeman.jpg 
-tags: [] 
+description: 这篇文章用来对新主题的 markdown 样式做测试
+categories: 
+- Life
+- Jekyll
+link: http://localhost:80
 ---
 
 
-I would like to pay tribute to Artem Sheludko for this article.
+谨以此文向 NexT 的作者们致敬。<br>
+浏览该[主题](http://simpleyyt.com/jekyll-theme-next/),和[GitHub](https://github.com/simpleyyt/jekyll-theme-next)
 
-谨以此文向博客主题的作者 Artem Sheludko 致敬。<br>
-浏览该[主题](http://jekyllthemes.org/themes/flexible-jekyll/),和[GitHub](https://github.com/artemsheludko/flexible-jekyll)
 
-![the Auther](http://p3oi9yqso.bkt.clouddn.com/2018-01-04-david-freeman.jpg)
-
-# GitHub
+# GitHub Pages
 *章鱼猫* <br>
 **喜欢GitHub的画风**
 
@@ -23,11 +22,23 @@ I would like to pay tribute to Artem Sheludko for this article.
 ![I and My friends](http://p3oi9yqso.bkt.clouddn.com/2018-01-04-722.jpg)
 
 下边的几种语言，你喜欢哪个？
-* [Java](https://www.imooc.com/course/list?c=java)
-* [Python](https://www.imooc.com/course/list?c=python)
-* [jQuery](https://www.imooc.com/course/list?c=jquery)
++ [Java](https://www.imooc.com/course/list?c=java)
++ [Python](https://www.imooc.com/course/list?c=python)
++ [jQuery](https://www.imooc.com/course/list?c=jquery)
 
-**Python测试代码**
+### 代码块测试
+
+这里的一行代码可以做内联代码 `print "Hello World!"`
+
+#### 普通代码块
+
+#### 高亮代码块
+
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
 ``` python
 #! python3
@@ -52,6 +63,35 @@ def download(url, proxy=None, num_retries=2):
 				return download(url, num_retries-1)
 	return html
 ```
+
+{% highlight python linenos %}
+#! python3
+# -*- coding:utf-8 -*- 
+
+import time
+import urllib.request as ulb
+
+
+def download(url, proxy=None, num_retries=2):
+	headers = {'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'}
+	print ("Downloading: "+url+"...")
+	request = ulb.Request(url=url, headers=headers)
+	time.sleep(1)
+	try:
+		html = ulb.urlopen(request).read()
+	except ulb.URLError as e:
+		print ("Download Error: " + str(e.reason))
+		html = None
+		if num_retries > 0:
+			if hasattr(e, 'code') and 500 <= e.code < 600:
+				return download(url, num_retries-1)
+	return html
+{% endhighlight %}
+
+#### Gist
+
+{% gist 996818 %}
+
 
 飞鸟集
 

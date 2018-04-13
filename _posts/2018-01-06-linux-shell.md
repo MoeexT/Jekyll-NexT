@@ -3,12 +3,16 @@ layout: post
 title: Shell 编程基础
 date: 2018-01-05 00:00:00 +0300
 description: 这篇文章主要介绍了Linux编程的基础：基本语法、条件控制、循环等知识的理解。
-img: 2018-01-06-shell.jpg # Add image post (optional)
+categories:
+- Linux
 tags: [Linux, Shell] # add tag
 ---
 
->The time of life is short; to spend that shortness basely, it would be too long. William Shakespeare <br>
->人生短暂，若虚度年华，则短暂的人生就太长了。——威廉·莎士比亚
+
+<blockquote class="blockquote-center">
+	The time of life is short; to spend that shortness basely, it would be too long. William Shakespeare <br>
+	人生短暂，若虚度年华，则短暂的人生就太长了。——威廉·莎士比亚
+</blockquote>
 
 ### Shell 介绍
 
@@ -20,22 +24,28 @@ Shell本身是一种用C语言编写的程序，从用户的角度来看，Shell
 
 利用vi/vim等文本编辑器编写 Shell 脚本的固定格式如下：<br>
 
->\#!/bin/sh<br>
->\#comments<br>
+{% highlight shell %}
+#!/bin/sh
+#comments
+{% endhighlight %}
 
 首行中的符号#!告诉系统其后路径所指定的程序即是解释此脚本文件的Shell程序。如果首行没有这句话，在执行脚本文件的时候，将会出现错误。
 后续的部分就是主程序，除第一行外，以#开头的行就是注释行，直到此行的结束。如果一行空间不够，可以在行尾加 " ，这个符号表明下一行与此行会合并为同一行。
 <br>
-编辑完毕后，将脚本存盘为 filename.sh，运行前首先将文件属性设为可执行：
+编辑完毕后，将脚本存盘为 `filename.sh`，运行前首先将文件属性设为可执行：
 
->chmod +x filename.sh<br>
->./finename.sh  \#本行代码执行脚本
+{% highlight shell %}
+chmod +x filename.sh
+./finename.sh  #本行代码执行脚本
+{% endhighlight %}
 
 ### Hello World
 
 新学习一门语言的第一步大抵就是 Hello World 了吧，和 C 语言、Java 等不同，Shell 一句话就能做到：
 
-> echo Hello World!
+``` shell
+echo Hello World!
+```
 
 其中 echo 语句要输出的内容可加引号也可不加引号，要输出多个内容时只需将内容依次写出来即可。
 
@@ -51,39 +61,48 @@ Shell 有两种类型的变量：<br>
 
 变量的辅助命令：
 
->set  #查看系统中所有定义的变量 <br>
->unset 变量名  #删除变量 <br>
->env #用于显示环境变量及其取值 <br>
->export #用于将本地数据区中的变量转移到用户环境区
+``` shell
+set  #查看系统中所有定义的变量
+unset 变量名  #删除变量
+env #用于显示环境变量及其取值
+export #用于将本地数据区中的变量转移到用户环境区
+```
 
 变量可以直接定义：
-> variable_name=variable_value <br>
-> echo $variable_name # $ 用于取变量的值
 
-$variable_name 可以在引号中使用，这一点和其他高级语言是明显不同的。如果出现混淆的情况，可以用花括号来区分，例如：
+``` shell
+variable_name=variable_value
+echo $variable_name # $ 用于取变量的值
+```
 
->a=hello world <br>
->echo "Hi, $as"
+`$variable_name` 可以在引号中使用，这一点和其他高级语言是明显不同的。如果出现混淆的情况，可以用花括号来区分，例如：
 
-就不会输出“Hi, hello worlds”，而是输出“Hi，”。这是因为Shell把$as当成一个变量，而$as未被赋值，其值为空。正确的方法是：
+``` shell
+a=hello world
+echo "Hi, $as"
+```
 
->echo "Hi, ${a}s"
+就不会输出`Hi, hello world`，而是输出`Hi，`。这是因为 Shell 把 `$as` 当成一个变量，而 `$as` 未被赋值，其值为空。正确的方法是：
+
+`echo "Hi, ${a}s`
 
 使用单引号，单引号中的变量不会进行变量替换操作。
 例如：
 
->$ABC = “time is $Date” <br>
->echo $ABC #输出：time is 2013-12-4 <br>
->$ABC = ‘time is $Date’ <br>
->echo $ABC 输出：time is $Date 
+``` shell
+$ABC = “time is $Date”
+echo $ABC #输出：time is 2013-12-4
+$ABC = ‘time is $Date’
+echo $ABC 输出：time is $Date 
+```
 
 ### 算术运算
 
 ``` shell
 ((i=$j+$k))  # 等价于  i=`expr $j + $k` 
-((i=$j-$k))  # 等价于  i=`expr $j -$k` 
-((i=$j*$k))  # 等价于  i=`expr $j \*$k` 
-((i=$j/$k))  # 等价于  i=`expr $j /$k` 
+((i=$j-$k))  # 等价于  i=`expr $j - $k` 
+((i=$j*$k))  # 等价于  i=`expr $j * $k` 
+((i=$j/$k))  # 等价于  i=`expr $j / $k` 
 ```
 
 ### 条件控制
@@ -110,12 +129,14 @@ case a in
 
 与其他语言不同，Shell中if语句的条件部分要以分号来分隔。其中[]表示条件测试，常用的条件测试有下面几种：
 
-> [ -f "$file" ]  #判断$file是否是一个文件 <br>
->[ $a -lt 3 ]  #判断$a的值是否小于3，同样-gt和-le分别表示大于或小于等于 <br>
->[ -x "$file" ]  #判断$file是否存在且有可执行权限，同样-r测试文件可读性 <br>
->[ -n "$a" ]  #判断变量$a是否有值，测试空串用-z <br>
->[ "$a" = "$b" ]  #判断$a和$b的取值是否相等 <br>
->[ cond1 -a cond2 ]  #判断cond1和cond2是否同时成立，-o表示cond1和cond2有一成立 <br>
+``` shell
+[ -f "$file" ]  #判断$file是否是一个文件
+[ $a -lt 3 ]  #判断$a的值是否小于3，同样-gt和-le分别表示大于或小于等于
+[ -x "$file" ]  #判断$file是否存在且有可执行权限，同样-r测试文件可读性
+[ -n "$a" ]  #判断变量$a是否有值，测试空串用-z
+[ "$a" = "$b" ]  #判断$a和$b的取值是否相等
+[ cond1 -a cond2 ]  #判断cond1和cond2是否同时成立，-o表示cond1和cond2有一成立
+```
 
 要注意条件测试部分中的空格。在方括号的两侧都有空格，在-f、-lt、=等符号两侧同样也有空格。如果没有这些空格，Shell解释脚本的时候就会出错。
 
@@ -123,10 +144,12 @@ case a in
 
 数组声明和使用的简单用法：
 
->array=(a b c) <br>
->${array[0]} 通过下标去数组内容 <br>
->${array[*]} 取所有元素 <br>
->${#array[*]} 取长度 <br>
+``` shell
+array=(a b c)
+${array[0]} 通过下标去数组内容
+${array[*]} 取所有元素
+${#array[*]} 取长度
+```
 
 ### 循环
 
@@ -180,9 +203,9 @@ echo 输出结果; $(函数名取结果)
 
 ### 举个栗子
 
-这是朴老师给布置的作业：
+这是代叔的一个练习
 
-``` shell
+{% highlight shell linenos %}
 function round(){
     dat=$((`date +"%s%N"`))
     echo ${dat:0-8}
@@ -227,6 +250,6 @@ case $len in
 esac
 address=${city[$len]}
 echo Time:$time Phone:$phone Address:$address$address1 Mile:$mile Sum:$money >> Taxi.log
-```
+{% endhighlight %}
 
 

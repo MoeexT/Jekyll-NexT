@@ -1,13 +1,20 @@
 ---
 layout: post
-title: X-战警（链接已废）
+title: X-战警
+description: 大多链接都挂掉了……
 date: 2018-02-23 00:00:00 +0800
-img: 2018-02-23-x-man-to-bingxin.jpg
-tags: [我自己] 
+categories:
+- Life
+tags:
+- X 战警
+- 我自己
 ---
 
-> "You are the big drop of dew under the lotus leaf, I am the smaller one on its upper side," said the dewdrop to the lake. <br>
-> 露水对露珠道；“你是荷叶下面的大露珠，我是在荷叶上面的较小的露珠。”——《飞鸟集》
+
+<blockquote class="blockquote-center">
+	"You are the big drop of dew under the lotus leaf, I am the smaller one on its upper side," said the dewdrop to the lake. <br>
+	露水对露珠道；“你是荷叶下面的大露珠，我是在荷叶上面的较小的露珠。”——《飞鸟集》
+</blockquote>
 
 全系列百度云链接: https://pan.baidu.com/s/1eTV75ia 密码: ntd5
 

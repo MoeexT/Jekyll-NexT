@@ -2,23 +2,30 @@
 layout: post
 title: Hbase 的安装配置
 date: 2018-01-29 00:00:00 +0800
-description: Hbase 的安装配置
-img: 2018-01-29-season.jpg
+description: 
+categories:
+- BigData
+- HBase
 tags: [大数据, Hbase] 
 ---
 
-> Take my wine in my own cup, friend. It lose its wreath of foam when poured into that of others. <br>
-> 在我自己的杯中，饮了我的酒吧，朋友。一倒在别人的杯里，这酒的腾跳的泡沫便要消失了。——《飞鸟集》
+
+<blockquote class="blockquote-center">
+	Take my wine in my own cup, friend. It lose its wreath of foam when poured into that of others. <br>
+	在我自己的杯中，饮了我的酒吧，朋友。一倒在别人的杯里，这酒的腾跳的泡沫便要消失了。——《飞鸟集》
+</blockquote>
 
 ### 环境变量配置
 
 在家目录的 “.bashrc” 文件里边配置环境变量，内容应当包括 JDK、Hadoop 和 Hbase。
 
-> export JAVA_HOME=/home/user/bigdata/jdk <br>
-> export HADOOP_HOME=/home/user/bigdata/hadoop <br>
-> export HBASE_HOME=/home/user/bigdata/hbase <br>
-> export CLASS_PATH=.:$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib <br>
-> export PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$HABASE_HOME/bin:${PATH}
+``` shell
+export JAVA_HOME=/home/user/bigdata/jdk
+export HADOOP_HOME=/home/user/bigdata/hadoop
+export HBASE_HOME=/home/user/bigdata/hbase
+export CLASS_PATH=.:$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+export PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$HABASE_HOME/bin:${PATH}
+```
 
 为了方便操作 hbase，以上已经添加了配置的 Hbase 环境变量： *HBASE_HOME* （非必须）
 
@@ -34,38 +41,39 @@ tags: [大数据, Hbase]
 
 进入编辑模式，在 ```<configuration>``` 下添加以下字段：
 
-``` xml
+{% highlight xml linenos %}
 <property>
     <name>hbase.zookeeper.property.dataDir</name>
-    <value>/home/user/bigdata/zookeeper</value>  <!--Zookeeper下载包解压的位置-->
+    <value>/home/user/bigdata/zookeeper</value>  <!-- Zookeeper下载包解压的位置 -->
 </property>
 <property>
     <name>hbase.cluster.distributed</name>
     <value>true</value>
 </property>
-使用hdfs：//// URI语法将hbase.rootdir从本地文件系统更改为HDFS实例的地址。 在此例中，HDFS在端口8020的本地主机上运行。
+<!-- 使用hdfs：//// URI语法将hbase.rootdir从本地文件系统更改为HDFS实例的地址。 
+	在此例中，HDFS在端口8020的本地主机上运行。 -->
 <property>
     <name>hbase.rootdir</name>
     <value>hdfs://localhost:8020/hbase</value>
 </property>
 <property>
     <name>hbase.zookeeper.quorum</name>
-    <value>node-a.example.com,node-b.example.com</value>  <!--这里填写集群中的主机名-->
+    <value>node-a.example.com,node-b.example.com</value>  <!-- 这里填写集群中的主机名 -->
 </property>
 <property>
    <name>hbase.zookeeper.property.clientPort</name>
    <value>2181</value>
 </property>
-```
+{% endhighlight %}
 
-此外，如果应用单独Zookeeper，需发更改/conf/hbase-env.sh下配置参数HBASE_MANAGES_ZK的值为true，配置情况如下所示：<br>
-```export HBASE_MANAGES_ZK=true```
+此外，如果应用单独Zookeeper，需发更改/conf/hbase-env.sh下配置参数HBASE_MANAGES_ZK的值为true，即：
+`export HBASE_MANAGES_ZK=true`
 
 ### Hbase 启动、停止、监控
 
 **启动、停止**
 
-start-hbase.sh（stop-hbase.sh），该文件在 hbase/bin 文件夹下，已经添加环境变量，所以可以在任意目录执行。（同 Hadoop）
+`start-hbase.sh(stop-hbase.sh)`，该文件在 hbase/bin 文件夹下，已经添加环境变量，所以可以在任意目录执行。（同 Hadoop）
 
 **查看守护进程**
 

@@ -3,18 +3,24 @@ layout: post
 title: Python pyinstaller的使用
 subtitle: 哈哈哈
 date: 2018-03-16 00:00:00 +0800
-description: 
-img: 2018-03-16-crab.jpg
-tags: [Python] 
+description: 把 python 脚本编译成 exe 文件，让没有安装 python 的同学也能运行你的脚本
+categories:
+- Python
+tags: 
+- Python
+- pyinstaller
 ---
 
-> I think of others ages that floated upon the stream of life and love and death and are forgotten, and I feel the freedom of passing away. <br>
-> 我想起了浮泛在生与爱与死的川流上的许多别的时代，以及这些时代之被遗忘，我便感觉到离开尘世的自由了。——《飞鸟集》
+
+<blockquote class="blockquote-center">
+	I think of others ages that floated upon the stream of life and love and death and are forgotten, and I feel the freedom of passing away. <br>
+	我想起了浮泛在生与爱与死的川流上的许多别的时代，以及这些时代之被遗忘，我便感觉到离开尘世的自由了。——《飞鸟集》
+</blockquote>
 
 ### 概述
 
-安装：```pip install pyinstaller``` <br>
-用法：```pyinstaller -options script.py```，等 pyinstaller 编译完成之后，目录里面就多出两个文件夹：build 和 dist，其中 dist 里面就是打包的二进制文件，build 里是编译过程生成的中间件（作用不明）
+安装：`pip install pyinstaller` <br>
+用法：`pyinstaller -options script.py`，等 pyinstaller 编译完成之后，目录里面就多出两个文件夹：build 和 dist，其中 dist 里面就是打包的二进制文件，build 里是编译过程生成的中间件（作用不明）
 
 选项 | 作用
 -w，--windowed，--noconsole | 窗体exe文件(Windows Only)

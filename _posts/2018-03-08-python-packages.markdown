@@ -4,13 +4,16 @@ title: Python 第三方库（持续更新）
 subtitle: 哈哈哈
 date: 2018-03-08 00:00:00 +0800
 description: python 的第三方库以及介绍
-img: 2018-03-08-python-packages.jpg
+categories:
+- Python
 tags: [Python] 
 ---
 
-> He who wants to do good knocks at the gate; he who loves finds the gate open. <br>
-> 那些想做好人的，在门外敲着门，那爱人的，看见们敞着。——《飞鸟集》
-
+<blockquote class="blockquote-center">
+	He who wants to do good knocks at the gate; he who loves finds the gate open. <br>
+	那些想做好人的，在门外敲着门，那爱人的，看见们敞着。——《飞鸟集》
+</blockquote>
+	
 ### 爬虫类 (8)
 
 库名 | 作用

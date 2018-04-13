@@ -1,15 +1,21 @@
 ---
 layout: post
 title: Hadoop 的安装
-date: 2018-01-12 00:00:00 +0300
-description: Linux 简介以及基本命令介绍
-img: 2018-01-12-hadoop-logo.png # Add image post (optional)
-tags: [Hadoop, 大数据] # add tag
+date: 2018-01-12 00:00:00 +0800
+description: HDFS 的搭建以及初步了解
+categories:
+- Hadoop
+- BigData
+tags: 
+- Hadoop
+- HDFS
 ---
 
 
->My heart beats her waves at the shore of the world and writes upon it her signature in tears with the words, "I love thee." <br>
->我的心冲激着她的波浪在“世界”的海岸上，蘸着眼泪在上边写着她的题记：<br> “我爱你。”——《飞鸟集》
+<blockquote class="blockquote-center">
+	My heart beats her waves at the shore of the world and writes upon it her signature in tears with the words, "I love thee." <br>
+	我的心冲激着她的波浪在“世界”的海岸上，蘸着眼泪在上边写着她的题记：<br> “我爱你。”——《飞鸟集》
+</blockquote>
 
 ### 大数据与 Hadoop 简单介绍
 
@@ -34,25 +40,26 @@ Hadoop 解决的就是 数据的存储（HDFS）和计算分析（MapReduce）�
 2. 解压
 3. 修改解压后文件夹名，方便以后升级而不用修改环境变量
 4. 配置环境变量，路径：用户家目录的 “.bashrc”
-> export JAVA_HOME=/home/groot/soft/jdk <br>
-> export HADOOP_HOME=/home/groot/soft/hadoop <br>
-> export PATH=$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:${PATH} <br>
+``` shell
+export JAVA_HOME=/home/groot/soft/jdk
+export HADOOP_HOME=/home/groot/soft/hadoop
+export PATH=$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:${PATH}
+```
 5. 修改配置文件，路径 /home/groot/hadoop/etc/hadoop/
-> A: hadoop-env.sh 找到 “# export JAVA_HOME=${JAVA_HOME}” 字样，在下方修改 jdk 的安装路径  <br>
-> B: core-site.xml 配置访问的主机名和端口 (8020)，<name>fs.default.name</name> <value>hdfs://master:8020</value> <br>
-> C: hdfs-site 配置备份数，指定元数据和数据块的存储目录 <br>
-> D: 用户名不一样的地方都需要改 <br>
-> E: 配置主机名：/etc/sysconfig/network 文件中，修改为 master/slave <br>
-> F: 配置 IP 和主机名的映射：/etc/hosts 文件，master 和 slave 都要改<br>
-> G: 配置 SSH 免密，假设在 master 节点家目录的 “.ssh” 文件夹 <br>
->> a: 生成密钥，ssh-keygen -t rsa -p ''  <br>
->> b: 这是本机免密，cat id_rsa.pub >> authorized_keys <br>
->> c: 上传公钥到slave，scp id_rsa.pub groot@slave:/home/groot/.ssh/aa.pub <br>
->> d: 免密登陆另一台机器，cat aa.pub >> authorized_keys <br>
->> e: slave 节点重复 master 节点的做法 <br>
-
-6. ./start-all.sh 启动 Hadoop
-7. 关闭防火墙（需要 root 权限）：service iptables stop <br>
+> `A: hadoop-env.sh 找到 “# export JAVA_HOME=${JAVA_HOME}” 字样，在下方修改 jdk 的安装路径 ` <br>
+> `B: core-site.xml 配置访问的主机名和端口 (8020)，<name>fs.default.name</name> <value>hdfs://master:8020</value>` <br>
+> `C: hdfs-site 配置备份数，指定元数据和数据块的存储目录` <br>
+> `D: 用户名不一样的地方都需要改` <br>
+> `E: 配置主机名：/etc/sysconfig/network 文件中，修改为 master/slave` <br>
+> `F: 配置 IP 和主机名的映射：/etc/hosts 文件，master 和 slave 都要改` <br>
+> `G: 配置 SSH 免密，假设在 master 节点家目录的 “.ssh” 文件夹` <br>
+>> `a: 生成密钥，ssh-keygen -t rsa -p '' ` <br>
+>> `b: 这是本机免密，cat id_rsa.pub >> authorized_keys` <br>
+>> `c: 上传公钥到slave，scp id_rsa.pub groot@slave:/home/groot/.ssh/aa.pub` <br>
+>> `d: 免密登陆另一台机器，cat aa.pub >> authorized_keys` <br>
+>> `e: slave 节点重复 master 节点的做法` <br>
+6. `./start-all.sh` 启动 Hadoop
+7. 关闭防火墙（需要 root 权限）：`service iptables stop` <br>
 8. 浏览器访问50070端口进入 HDFS 的管理界面
 9. jps 命令查看进程 主要是查看 Name Node 和 Data Node
 
@@ -66,10 +73,9 @@ Hadoop 解决的就是 数据的存储（HDFS）和计算分析（MapReduce）�
 
 **Shell 命令**
 
-执行 Shell 命令的根目录应该是 hdfs:192.168.208.132:8020/，但是我们一般用 / 代替
+执行 Shell 命令的根目录应该是 `hdfs:192.168.208.132:8020/`，但是我们一般用 / 代替
 
-1. 创建目录：hadoop fs -mkdir 目录名
-2. 查看目录：hadoop fs -ls
-3. 上传文件：hadoop fs -put 文件名 路径名
+1. 创建目录：`hadoop fs -mkdir` 目录名
+2. 查看目录：`hadoop fs -ls`
+3. 上传文件：`hadoop fs -put` 文件名 路径名
 
-**向骚气可爱的朴(piao)老师致敬**

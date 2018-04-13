@@ -3,19 +3,23 @@ layout: post
 title: 给 GitHub Pages 博客配置云解析
 date: 2018-01-28 00:00:00 +0800
 description: 
-img: 2018-01-28-pencial.jpg
+categories: 
+- Jekyll
 tags: [Github Pages] 
 ---
 
-> Thank the flame for its light, but do not fotget the lampholder standing in the shade with coonstancy of patience. <br>
-> 谢谢火焰给你光明，但是不要忘了那执灯的人，他是坚忍地站在黑暗当中呢。——《飞鸟集》
+
+<blockquote class="blockquote-center">
+	Thank the flame for its light, but do not fotget the lampholder standing in the shade with coonstancy of patience. <br>
+	谢谢火焰给你光明，但是不要忘了那执灯的人，他是坚忍地站在黑暗当中呢。——《飞鸟集》
+<blockquote>
 
 云解析就是绑定域名，这个域名 “yuwancumian666.top” 是在阿里云注册的，两块钱😄
 在 GitHub Pages 上搭好博客之后可以设置云解析。
 
 ### 创建 CNAME 文件
 
-首先在博客的根目录新建一个文件：“CNAME”，内容为要解析的域名：“yuwancumian666.top”，注意不要添加 http://或 www 等前缀。在 Windows 下如果不能建立没有后缀名的文件时，则可以 shift + 右键打开 Power Shell 输入 ```echo yuwancumian666.top > CNAME```以建立该文件。
+首先在博客的根目录新建一个文件：“CNAME”，内容为要解析的域名：“yuwancumian666.top”，注意不要添加 http://或 www 等前缀。在 Windows 下如果不能建立没有后缀名的文件时，则可以 shift + 右键打开 Power Shell 输入 `echo yuwancumian666.top > CNAME`以建立该文件。
 
 ### 设置云解析
 

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Python 爬取海盗湾磁力链
+title: Python 爬取磁力链
 date: 2018-01-27 00:00:00 +0800
-description: Python 爬取小黄片
-img: 2018-01-27-the-pirate-bay.jpg 
+description: 在海盗湾里找东西
+categories:
+- Python
 tags: [Python, 爬虫] 
 ---
 
-> The mystery of creation is like the darkness of night------it is great. Delusions of knowledge are like the fog of the morning. <br>
-> 创造的神秘，有如夜间的黑暗，——是伟大的。而知识的幻影，不过是晨间之雾。——《飞鸟集》
+<blockquote class="blockquote-center">
+	The mystery of creation is like the darkness of night------it is great. Delusions of knowledge are like the fog of the morning. <br>
+	创造的神秘，有如夜间的黑暗，——是伟大的。而知识的幻影，不过是晨间之雾。——《飞鸟集》
+</blockquote>
 
 ### 海盗湾简介
 
@@ -21,18 +24,14 @@ tags: [Python, 爬虫]
 
 直接构造搜索页面的 url，把要查询的关键字替换掉浏览器查询的关键字，并借此发送请求。由于该网站构造比较简单，可以在搜索界面直接分析，找出磁力链接并进行翻页。
 
-### 代码分析
+### 代码
 
 **使用注意：**要搜索的内容需要写到 name_list （列表）里，作为变量传到 main() 模块里。
 
 代码为了美观已将制表符替换为四个空格（页面制表符默认显示8个空格）。
 
 **用到的模块**
-
-``` python
-#! python 2
-#coding: utf-8
-
+{% highlight python linenos %}
 import os
 import re
 import time
@@ -40,13 +39,13 @@ import random
 import urlparse
 import urllib2 as ulb
 from     4 import BeautifulSoup as     
-```
 
-**download**
 
-该模块接受要下载的url、用户代理（默认‘wswp’）、代理服务器（默认为空）和重新尝试次数（默认为2），返回该网页的内容和搜索内容的最大页数（只在第一次返回）。
-
-``` python
+'''
+该模块接受要下载的url、用户代理（默认‘wswp’）、
+代理服务器（默认为空）和重新尝试次数（默认为2），
+返回该网页的内容和搜索内容的最大页数（只在第一次返回）。
+'''
 def download(url, user_agent='wswp', proxy=None, num_retries=2):
     print ("Downloading: " + url)
     headers = {'User-agent': user_agent}
@@ -69,24 +68,16 @@ def download(url, user_agent='wswp', proxy=None, num_retries=2):
         return html, max_href_index
     else:
         return html
-```
 
-**get_links**
 
-根据给定的网页内容，转化为 BeautifulSoup 文档对象，搜索磁力链节点并以列表形式返回
-
-``` python
+# 根据给定的网页内容，转化为 BeautifulSoup 文档对象，搜索磁力链节点并以列表形式返回
 def get_links(html):
     soup =     (html, "html5lib")
     list = soup.find_all('a', href=re.compile(r'^magnet'))
     return list
-```
 
-**main**
 
-创建一个以关键字命名的文本文件，将下载的磁力链依次写入并保存。
-
-``` python
+# 创建一个以关键字命名的文本文件，将下载的磁力链依次写入并保存。
 def main(name_list):    
     for name in name_list:
         page = 0
@@ -112,8 +103,10 @@ def main(name_list):
         f.flush()
         f.close()
         os.rename(name+'.txt',name+'-'+str(magnet_num)+'.txt')
-```
+{% endhighlight %}
 
 **总结**
+
+移步[Github](https://github.com/yuwancumian666/Spiders/tree/master/PirateBay)看代码，有惊喜
 
 这好像是第一次比较正式的爬虫，代码比较 low，好在能用么么哒(づ￣ 3￣)づ

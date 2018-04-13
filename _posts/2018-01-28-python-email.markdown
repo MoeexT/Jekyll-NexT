@@ -3,12 +3,16 @@ layout: post
 title: Python SMTP 发送邮件
 date: 2018-01-28 00:00:00 +0800
 description: 自动化发邮件，不用登陆客户端
-img: 2018-01-28-python-email.jpg
+categories: 
+- Python
 tags: [Python, 网络编程]
 ---
 
-> Like the metting of the seagulls and the waves we meet and come near. The seagulls fly off, the waves roll away and we depart. <br>
-> 我们如海鸥之于波涛相遇似的，遇见了，走近了。海鸥飞去，波涛滚滚地流开，我们也分别了。——《飞鸟集》
+
+<blockquote class="blockquote-center">
+	Like the metting of the seagulls and the waves we meet and come near. The seagulls fly off, the waves roll away and we depart. <br>
+	我们如海鸥之于波涛相遇似的，遇见了，走近了。海鸥飞去，波涛滚滚地流开，我们也分别了。——《飞鸟集》
+</blockquote>
 
 ### 模块简介
 
@@ -45,7 +49,7 @@ smtp 对象使用 sendmail 方法发送邮件：```smtp.sendmail(sender, receive
 
 这里使用新浪邮箱示例，QQ邮箱登录需要16位授权码，而且验证还过不去(lll￢ω￢)
 
-``` python
+{% highlight python linenos %}
 # -*- coding: UTF-8 -*-
 import smtplib
 from email.mime.text import MIMEText
@@ -69,19 +73,20 @@ try:
 except smtplib.SMTPException as e:
     print "Error: cannot send my email"
     print e
-```
+{% endhighlight %}
 
-接收到的邮件如图：![example-receiver]({http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example1.png)
+接收到的邮件如图：![example-receiver](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example1.png)
 
 ### 发送附件
 
-``` python
-#coding:utf-8
+{% highlight python linenos %}
+# -*- coding: utf-8 -*-
 
 import smtplib
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+
 
 SMTP_SERVER = 'smtp.sina.com'
 SMTP_PORT = 25
@@ -119,7 +124,7 @@ try:
     session.quit()
 except smtplib.SMTPException,e:  
     print e 
-```
+{% endhighlight %}
 
 效果图：![example-receiver](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example2.png)
 
@@ -127,7 +132,7 @@ except smtplib.SMTPException,e:
 
 这里使用的 HTML 是一个小爬虫爬到的数据，经简单包装后返回一个字符串，把字符串作为附件发送。
 
-``` python
+{% highlight python linenos%}
 #!/usr/bin/python
 #coding:utf-8 
 import sys 
@@ -174,7 +179,7 @@ try:
 except smtplib.SMTPException,e:
     print e 
 
-```
+{% endhighlight %}
 
 结果（你猜猜内容是啥😄）：![exp3](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example3.png)
 

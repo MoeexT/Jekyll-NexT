@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Hive 分桶（待优化）
+title: Hive 分桶
 subtitle: 哈哈哈
 date: 2018-02-06 00:00:00 +0800
-description: 上课跟着老师写的博客 QQ：3916188 
-img: 2018-02-08-hive-bucket.jpg
+description: 我擦，还有一篇……
+categories:
+- Hive
+- BigData
 tags: [Hive, 大数据] 
 ---
 
 哈希分区 （不能再用）
-分桶：为解决数据倾斜以及推行机制带来的负面效应  P131
+分桶：为解决数据倾斜以及推行机制带来的负面效应  Hive编程指南P131
 
 ### 排序
 ORDER BY：运行时走 MapReduce,DISTINCT 走MapReduce
@@ -27,7 +29,7 @@ CLUSTER BY：如果 distribute by 和 sort by 中涉及到的字段完全相同�
 分区其实是按指定的格式再表下面分出若干个（有限的）文件夹，把相应的文件分到指定的文件夹下，加快查询速度。
 分桶：默认采用 HashPartition 分区，能够满足把数据近似均匀地分配到不同的桶里，例如有
 
-``` SQL
+``` sql
 create table users(
 userId INT,
 username STRING)
@@ -41,40 +43,42 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 
 ## 视图和索引
 
-视图：一组 HiveQL 语句，没有实际的数据
+### 视图
 
-### 建立视图
+一组 HiveQL 语句，没有实际的数据
+
+#### 建立视图
 
 1. create view 视图名[(字段名1，字段名2，……)]
    as
    HiveQL
    
-### 查询视图
+#### 查询视图
 
 数据：可以像查表一样查询视图
 结构：desc 视图名
 
-### 删除视图
+#### 删除视图
 
 drop view 视图名
 
 ### 索引
 
-**建立**
+#### 建立
 
-```
+``` sql
 hive> create index index_stocks on table stocks(symbol)
 hive> AS 'org.apache.hadoop.hive.ql.indx.compact.CompactIndexHandler'
 hive> with deferred rebuild;
 ```
 
-**查询**
+#### 查询
 
-```show formatted index on stocks;```
+`show formatted index on stocks;`
 
-**删除**
+#### 删除
 
-```drop index if exists index_stocks on stocks;```
+`drop index if exists index_stocks on stocks;`
 
 ### 总结
 

@@ -2,15 +2,18 @@
 layout: post
 title: Python 自动登陆 WiFi 和 拨号
 date: 2018-01-12 00:00:00 +0300
-description: 用Python发送http请求实现登陆WiFi和拨号
-img: 2018-01-24-handshake.png # Add image post (optional)
+description: 用 Python 发送 http 请求实现登陆 WiFi 和拨号
+categories:
+- Python
 tags: [Python, 网络编程] # add tag
 ---
 
 
-> The mighty desert is burning for the love of a blade of grass who shakes her head and laughs and flies away. <br>
-> 广袤无垠的沙漠热烈地追求着一叶绿草的爱，但她摇摇头，笑起来，飞了开去。——《飞鸟集》
-
+<blockquote class="blockquote-center">
+    The mighty desert is burning for the love of a blade of grass who shakes her head and laughs and flies away. <br>
+    广袤无垠的沙漠热烈地追求着一叶绿草的爱，但她摇摇头，笑起来，飞了开去。——《飞鸟集》
+</blockquote>
+    
 ## 登陆 WiFi
 
 用 Python 自动登陆WiFi的原理是利用 Requests 发送一个http请求，并得到相应的回复，以完成登陆 WiFi 的目的。
@@ -33,7 +36,7 @@ Name 一栏，点击当前主页，选中 Headers，在 Request Headers 里即�
 
 *注意：*代码为美观已把制表符 ('\t') 全部替换为四个空格
 
-``` python
+{% highlight python linenos %}
 #! python2
 #encoding: utf-8
 
@@ -122,7 +125,7 @@ def main():
 if __name__ == '__main__':
     main()
     
-```
+{% endhighlight %}
 
 ## 自动拨号
 
@@ -131,13 +134,13 @@ Windows 下自动拨号比较简单，就是利用 os 库模拟 cmd 命令，没
 "你没有连接到 xxx。<br>
 命令已完成。"
 
-```python
+{% highlight python linenos%}
 #coding: utf-8
 import os
 
-conn=u"rasdial 鱼丸粗面a 2015212605 mq2020."
+conn=u"rasdial 鱼丸粗面a 2015212605 ****"
 disc="rasdial 鱼丸粗面a /disconnect"
 
 os.system(conn) # 连接
 os.system(disc) # 断开
-```
+{% endhighlight %}

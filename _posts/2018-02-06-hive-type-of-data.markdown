@@ -3,19 +3,24 @@ layout: post
 title: Hive 数据类型
 subtitle: 哈哈哈
 date: 2018-02-06 00:00:00 +0800
-description: 上课跟着老师写的博客
-img: 2018-02-06-hive-type-of-data-pencil.jpg
+description: 来源不明…… 😏
+categories:
+- BigData
+- Hive
 tags: [Hive, 大数据] 
 ---
 
-> I cannot tell why this heart languishes in silence. It is for small needs it never asks, or knows or remembers. <br>
-> 我说不出这心为什么那样颓丧着，是为了它那不曾要求，不曾知道，不曾记得的小小的需要。——《飞鸟集》
 
-### 基本数据类型
+<blockquote class="blockquote-center">
+	I cannot tell why this heart languishes in silence. It is for small needs it never asks, or knows or remembers. <br>
+	我说不出这心为什么那样颓丧着，是为了它那不曾要求，不曾知道，不曾记得的小小的需要。——《飞鸟集》
+</blockquote>
 
+## 基本数据类型
 
+未完待续……
 
-### 复杂数据类型
+## 复杂数据类型
 
 关系型数据库强烈不建议重复存储
 我们接触过的大数据数据库比如 Hbase、Hive 不怕重复，但要求的是存储数据的文件不要太小。
@@ -43,25 +48,25 @@ COLLECTION ITEMS TERMINATED BY '|'
 ;
 ```
 
-然后导入数据：``` LOAD DATA LOCAL INPATH '/home/user/test_data/login_array.txt' INTO TABLE loginArray```
+然后导入数据：` LOAD DATA LOCAL INPATH '/home/user/test_data/login_array.txt' INTO TABLE loginArray```
 
-查询数据：```SELECT id,userid FROM loginArray``` 
+查询数据：`SELECT id,userid FROM loginArray`
 
 ![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-array-id-userid.jpg)
 
 指定数组元素查询：
 
-```SELECT id,userid[0] FROM loginArray``` ：
+`SELECT id,userid[0] FROM loginArray` 
 
 ![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-array-ip-userid%5B1%5D.jpg)
 
-查询数组长度（-1为空）：```SELECT size(userid) FROM loginArray``` ：
+查询数组长度（-1为空）：`SELECT size(userid) FROM loginArray`
 
 ![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-array-length.jpg)
 
 ### 集合
 
-**标准数据表处理**
+#### 标准数据表处理
 
 给定测试数据：
 
@@ -89,7 +94,7 @@ MAP KEYS TERMINATED BY ':'
 
 ![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-map-1-all.jpg)
 
-**含脏数据的表处理**
+#### 含脏数据的表处理
 
 测试数据：
 

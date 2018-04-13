@@ -5,11 +5,17 @@ subtitle: 哈哈哈
 date: 2018-02-04 00:00:00 +0800
 description: Python 来做一个高大上的词云
 img: 2018-02-04-cloud.jpg
-tags: [Python] 
+categories:
+- Python
+tags: 
+- Python
+- 词云
 ---
 
-> The cloud stood humbly in a corner of the sky. The morning crowner it with splendor. <br>
-> 白云谦逊地站在天之一隅，晨光给他戴上了霞彩。——《飞鸟集》
+<blockquote class="blockquote-center">
+	The cloud stood humbly in a corner of the sky. The morning crowner it with splendor. <br>
+	白云谦逊地站在天之一隅，晨光给他戴上了霞彩。——《飞鸟集》
+</blockquote>
 
 ### What is 词云
 
@@ -18,14 +24,13 @@ tags: [Python]
 ### 准备依赖包
 
 网上自动生成词云的网站有很多，在这里使用 “<a href="https://github.com/amueller/word_cloud" target="_blank">wordcloud</a>” 依赖，功能强大，简单易上手。若需要做中文的词云，需要中文分词工具“<a href="https://github.com/fxsjy/jieba" target="_blank">jieba</a> ”对文本解析。
-安装 wordcloud 和 jieba：```pip install wordcloud```，```pip install jieba```。如果你安装了多个版本的 Python，则前者默认给Python3安装，若需要给python2 安装 wordcloud，使用 ```py -2 -m pip install wordcloud```。 
+安装 wordcloud 和 jieba：`pip install wordcloud`，`pip install jieba`。如果你安装了多个版本的 Python，则前者默认给Python3安装，若需要给python2 安装 wordcloud，使用 `py -2 -m pip install wordcloud`。 
 
 ### 英文词云
 
 这个代码会生成两个词云作为对比，一个是随机颜色，一个是以照片底色为基准颜色的词云。在 WordCloud 方法中，可根据自身需要更改参数以取得最佳效果。
 
-
-``` python
+{% highlight python linenos %}
 #! python3
 from PIL import Image
 import numpy as np
@@ -55,7 +60,7 @@ plt.axis("off")
 wc2.to_file('sb2.png')
 
 plt.show()
-```
+{% endhighlight %}
 
 以下是效果图及对比：
 <div align='center'>
@@ -68,7 +73,7 @@ plt.show()
 
 开始运行行代码的时候，只显式了若干彩色的小矩形框（乱码，Python 的字符编码令人抓狂），中文词语显式不出来，网上搜博客说是 wordcloud 生成词语的字体问题。进入wordcloud.py 的源码，找字体库相关的代码``` FONT_PATH = os.environ.get("FONT_PATH", os.path.join(os.path.dirname(__file__),"DroidSansMono.ttf")) ```，将之改为支持中文的字体即可解决。
 
-``` python
+{% highlight python linenos %}
 #! python3
 # encoding=utf-8
 import numpy as np
@@ -106,7 +111,7 @@ plt.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
 plt.axis("off")
 wc.to_file('weibo_logo1024.jpg')
 plt.show()
-```
+{% endhighlight %}
 
 <div align="center">
 	<img src="http://p3oi9yqso.bkt.clouddn.com/2018-02-04-weibo-ch.jpg" width="320" height="320" alt="中文分词">
@@ -115,7 +120,7 @@ plt.show()
 
 另附：下载微博热搜榜热搜词代码（默认下载三次）。简单的说，这个代码也是一个小爬虫，通过多次刷新热搜榜以获得较多的样本数量，将热搜词爬取下来保存为文本。
 
-``` python
+{% highlight python linenos %}
 #! python3
 # -*- coding:utf-8 -*- 
 
@@ -158,4 +163,4 @@ if __name__ == '__main__':
     with open('hotWords.txt', 'w') as f:
         for word in list:
             f.write(word+'\n')
-```
+{% endhighlight %}
