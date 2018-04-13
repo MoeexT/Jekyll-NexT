@@ -293,7 +293,8 @@ links_layout: inline
 links:
   Jekyll-NexT: http://theme-next.simpleyyt.com/
   Hexo-NexT: http://www.fontawesome.com.cn/faicons/
-  图标库: http://www.fontawesome.com.cn/faicons/
+  FontAwesome: http://www.fontawesome.com.cn/faicons/
+  Jemoji: https://www.webpagefx.com/tools/emoji-cheat-sheet/
 
 # ---------------------------------------------------------------
 # Post Settings
