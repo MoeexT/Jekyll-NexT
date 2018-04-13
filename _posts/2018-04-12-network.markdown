@@ -5,8 +5,8 @@ subtitle: 爱哭的嘎达傻空了大概看到过
 date: 2018-03-18 00:00:00 +0800
 description: 这里记录的是牛客网刷题遇到的不会的东西
 categories:
-- Scala
-tags: [Scala, Spark] 
+- Computer Network
+tags: [计算机网络] 
 ---
 
 <blockquote class="blockquote-center">
