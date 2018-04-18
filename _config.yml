@@ -388,7 +388,7 @@ baidu_analytics: ecfbc57e741e2b095b34f42f4cff1dc0
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: yuwancumian666
   count: true
   # hide comments (visitors need to click to load the comments)
