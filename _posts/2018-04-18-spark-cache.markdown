@@ -84,15 +84,15 @@ rdd.unpersist(): 手动把持久化的 RDD 从缓存中移除
 </table>
 
 补充：
-1. MEMORY_ONLY 和 MEMORY_ONLY_SER 的区别： 前者是以对象的形式存储，后者以序列化的形式存储。
-2. MEMORY_ONLY 和 MEMORY_AND_DISK 的区别: 前者先可内存存储，如果内存存不下，就不存了。直接从HDFS上读取数据重新算。后者先可内存存储，如果内存存不下，把剩下的存入到磁盘当中
+1. MEMORY_ONLY 和 MEMORY_ONLY_SER 的区别： 前者是以对象的形式存储，后者以序列化的形式（字节数组）存储。
+2. MEMORY_ONLY 和 MEMORY_AND_DISK 的区别: 前者先在内存存储，如果内存存不下，就不存了。直接从HDFS上读取数据重新计算。后者先在内存存储，如果内存存不下，把剩下的存入到磁盘当中
 3. 选择 MEMORY_ONLY 为默认级别的原因: 按照 Spark 速度快的特性，即使从 HDFS 上取数据重新计算也比多一次 IO 读写要快。记得用我是最好的
 4. 在序列化级别后加 "_2"可以把持久化数据存为两份
 5. 如果当前 RDD 计算比较复杂，可考虑使用 MEMORY_AND_DISK
 
 以下是其源码：
 
-``` scala 
+{% highlight scala linenos %}
 val NONE = new StorageLevel(false, false, false, false)
   val DISK_ONLY = new StorageLevel(true, false, false, false)
   val DISK_ONLY_2 = new StorageLevel(true, false, false, false, 2)
@@ -105,7 +105,7 @@ val NONE = new StorageLevel(false, false, false, false)
   val MEMORY_AND_DISK_SER = new StorageLevel(true, true, false, false)
   val MEMORY_AND_DISK_SER_2 = new StorageLevel(true, true, false, false, 2)
   val OFF_HEAP = new StorageLevel(true, true, true, false, 1)
-```
+{% endhighlight %}
 
 ### checkpoint——检查点
 
@@ -117,3 +117,10 @@ rdd.checkpoint
 ```
 
 使用条件：前面的计算极其复杂，流程特别长。创建checkpoint之后，所有的父级RDD依赖关系全部被移除，本身成为顶级父RDD。使用前应先持久化，否则需要重新计算一次。
+
+### 查看存储级别
+
+先用 Thread.sleep(1000000), 再在 localhost:4040 查看
+或者用代码 `rdd.getStorageLevel.description`
+
+
