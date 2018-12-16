@@ -22,4 +22,4 @@ NexT is built for easily use with elegant appearance. First things first, always
 
 我竟然把自己的支付宝贴了出来
 
-![支付宝扫码捐赠]({{ site.baseurl }}/assets/images/collection-code.jpg){: height="420px" width="270px"}
+![支付宝扫码捐赠](assets/images/collection-code.jpg){: height="420px" width="270px"}
