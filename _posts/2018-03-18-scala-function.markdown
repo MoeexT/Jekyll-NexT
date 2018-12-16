@@ -77,7 +77,7 @@ def max(a:Int, b:Int, c:Int) = {
 def info (name:String, age:Int) = {
     println(s"name:$name, age:$age")
 }
-info("tom, 1)
+info("tom, 1")
 // 或
 def info (name:String="tom", age:Int) = {
     println(s"name:$name, age:$age")

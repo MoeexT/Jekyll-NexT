@@ -94,17 +94,17 @@ rdd.unpersist(): 手动把持久化的 RDD 从缓存中移除
 
 {% highlight scala linenos %}
 val NONE = new StorageLevel(false, false, false, false)
-  val DISK_ONLY = new StorageLevel(true, false, false, false)
-  val DISK_ONLY_2 = new StorageLevel(true, false, false, false, 2)
-  val MEMORY_ONLY = new StorageLevel(false, true, false, true)
-  val MEMORY_ONLY_2 = new StorageLevel(false, true, false, true, 2)
-  val MEMORY_ONLY_SER = new StorageLevel(false, true, false, false)
-  val MEMORY_ONLY_SER_2 = new StorageLevel(false, true, false, false, 2)
-  val MEMORY_AND_DISK = new StorageLevel(true, true, false, true)
-  val MEMORY_AND_DISK_2 = new StorageLevel(true, true, false, true, 2)
-  val MEMORY_AND_DISK_SER = new StorageLevel(true, true, false, false)
-  val MEMORY_AND_DISK_SER_2 = new StorageLevel(true, true, false, false, 2)
-  val OFF_HEAP = new StorageLevel(true, true, true, false, 1)
+val DISK_ONLY = new StorageLevel(true, false, false, false)
+val DISK_ONLY_2 = new StorageLevel(true, false, false, false, 2)
+val MEMORY_ONLY = new StorageLevel(false, true, false, true)
+val MEMORY_ONLY_2 = new StorageLevel(false, true, false, true, 2)
+val MEMORY_ONLY_SER = new StorageLevel(false, true, false, false)
+val MEMORY_ONLY_SER_2 = new StorageLevel(false, true, false, false, 2)
+val MEMORY_AND_DISK = new StorageLevel(true, true, false, true)
+val MEMORY_AND_DISK_2 = new StorageLevel(true, true, false, true, 2)
+val MEMORY_AND_DISK_SER = new StorageLevel(true, true, false, false)
+val MEMORY_AND_DISK_SER_2 = new StorageLevel(true, true, false, false, 2)
+val OFF_HEAP = new StorageLevel(true, true, true, false, 1)
 {% endhighlight %}
 
 ### checkpoint——检查点
