@@ -6,7 +6,6 @@ description: 这篇文章用来对新主题的 markdown 样式做测试
 categories: 
 - Life
 - Jekyll
-link: http://localhost:80
 ---
 
 
@@ -19,7 +18,7 @@ link: http://localhost:80
 **喜欢GitHub的画风**
 
 根据下图所描述的情形，我们可以想象：元旦的晚上，狗哥欢渡春宵彻夜不归。寝室只剩一半人口，闪闪的彩灯让人倍感寂寞。我（中间最帅的那位）拉开正在搞基的两人（两边），拍下了这副**鄙视图**。注：他们俩在鄙视我
-![I and My friends](http://p3oi9yqso.bkt.clouddn.com/2018-01-04-722.jpg)
+![I and My friends]({{ site.data.oss_images.thank-the-auther-home }})
 
 下边的几种语言，你喜欢哪个？
 + [Java](https://www.imooc.com/course/list?c=java)

@@ -14,6 +14,7 @@ tags: [Github Pages]
 	谢谢火焰给你光明，但是不要忘了那执灯的人，他是坚忍地站在黑暗当中呢。——《飞鸟集》
 <blockquote>
 
+
 云解析就是绑定域名，这个域名 “yuwancumian666.top” 是在阿里云注册的，两块钱😄
 在 GitHub Pages 上搭好博客之后可以设置云解析。
 
@@ -25,7 +26,7 @@ tags: [Github Pages]
 
 在阿里云的控制台找到 “云解析 DNS” 一栏，在域名下添加解析如下：
 
-![cloud-dns](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-cloud-dns.png)
+![cloud-dns](http://p3oi9yqso.bkt.clouddn.com/cloud-dns-cloud-dns.png)
 
 * 设置主机记录www，记录类型为A，记录值是IP192.30.252.153。其中192.30.252.153是Github Pages服务器指定的IP地址，访问该IP地址即表示访问Github Pages
 * 设置主机记录www，记录类型为A，记录值是IP192.30.252.154。

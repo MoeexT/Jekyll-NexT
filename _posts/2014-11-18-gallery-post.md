@@ -9,7 +9,7 @@ photos:
 - http://ww2.sinaimg.cn/mw690/81b78497jw1emfgwil5xkj21hc0u0tpm.jpg
 - http://ww3.sinaimg.cn/mw690/81b78497jw1emfgvcdn25j21hc0u0qpa.jpg
 category: 
-- Template
+- Gallery
 tags:
 - 资源
 ---

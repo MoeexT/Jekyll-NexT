@@ -35,7 +35,7 @@ export PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$HADOOP_HOME/bin:$HADOOP_HOM
 
 在 hbase/conf 文件夹下，打开 hbase-env.sh，找到 jdk 的路径配置，添加 ```export JAVA_HOME=/home/user/bigdata/jdk```
 配置完 jdk 路径后，在下方可以看到配置 HBASE_CLASSPATH 的提示，添加 ```export HBASE_CLASSPATH=/home/user/bigdata/hadoop/etc/hadoop```
-![exp](http://p3oi9yqso.bkt.clouddn.com/2018-01-29-hbase-env.png)
+![exp]({{ site.data.oss_images.bigdata-hbase-hbase-env }})
 
 **hbase-site.xml**
 

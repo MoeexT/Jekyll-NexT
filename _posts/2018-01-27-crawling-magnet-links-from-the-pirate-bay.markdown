@@ -17,8 +17,8 @@ tags: [Python, 爬虫]
 
 大名鼎鼎的[**海盗湾**](https://thepiratebay.cd/ "The Pirate Bay")，号称是全银河系最大的 BitTorrent 服务器，拥有数百万资源。是一个专门存储、分类及搜索 BitTorrent 种子文件的  *反版权*  网站，现今大多资源的提供形式为磁力链 (Magnet)。
 
-![main page](http://p3oi9yqso.bkt.clouddn.com/2018-01-27-the-pirate-bay-1.png)
-![search page](http://p3oi9yqso.bkt.clouddn.com/2018-01-27-the-pirate-bay-2.png)
+![main page]({{ site.data.oss_images.crawling-magnet-the-pirate-bay-1 }})
+![search page]({{ site.data.oss_images.crawling-magnet-the-pirate-bay-2 }})
 
 ### 设计思想
 

@@ -34,7 +34,7 @@ Struct（结构） | 一组不同字段，且每个字段的类型可以不同 |
 
 假如我们有以下数据：
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-array.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-array }})
 
 在 Hive 里创建一个表：
 
@@ -52,17 +52,17 @@ COLLECTION ITEMS TERMINATED BY '|'
 
 查询数据：`SELECT id,userid FROM loginArray`
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-array-id-userid.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-array-id-userid }})
 
 指定数组元素查询：
 
 `SELECT id,userid[0] FROM loginArray` 
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-array-ip-userid%5B1%5D.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-array-ip-userid[1] }}.jpg)
 
 查询数组长度（-1为空）：`SELECT size(userid) FROM loginArray`
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-array-length.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-array-length }})
 
 ### 集合
 
@@ -70,7 +70,7 @@ COLLECTION ITEMS TERMINATED BY '|'
 
 给定测试数据：
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-map-1.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-map-1 }})
 
 数据表示某用户(id)，在某 IP 的主机上玩了哪些游戏以及游戏次数
 
@@ -92,27 +92,27 @@ MAP KEYS TERMINATED BY ':'
 
 插入数据后表结构如图：
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-map-1-all.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-map-1-all }})
 
 #### 含脏数据的表处理
 
 测试数据：
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-map-2.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-map-2 }})
 
 导入数据时可以直接覆盖上一张表：
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-map-2-all.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-map-2-all }})
 
 在查询某一个键时，因为数据的不统一（如“ wow” 和 “wow”，前者含空格）导致结果不同
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-map-different-info.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-map-different-info }})
 
 ### 结构
 
 数据：
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-struct.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-struct }})
 
 建表：
 
@@ -129,5 +129,5 @@ COLLECTION ITEMS TERMINATED BY '|'
 
 插入后表信息：
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-06-struct-all.jpg)
+![]({{ site.data.oss_images.hive-type-of-data-struct-all }})
 

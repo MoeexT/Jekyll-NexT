@@ -2,7 +2,7 @@
 layout: post
 title: X-战警
 description: 大多链接都挂掉了……
-date: 2018-02-23 00:00:00 +0800
+date: x-man-to-bingxin 00:00:00 +0800
 categories:
 - Life
 tags:
@@ -33,60 +33,60 @@ https://pan.baidu.com/s/1ds0aFs
 
 ### X战警：第一战
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-first-class.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-first-class }})
 
 链接: https://pan.baidu.com/s/1pNl4luV 密码: um1i
 
 ### 金刚狼
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-wolverine.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-wolverine }})
 
 链接: https://pan.baidu.com/s/1dGiQ4xV 密码: ixbb
 
 ### X战警
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-x-man.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-x-man }})
 
 链接: https://pan.baidu.com/s/1pMRlxG3 密码: 3vy9
 
 ### X战警2
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-x-man-2.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-x-man-2 }})
 
 链接: https://pan.baidu.com/s/1htt9Iew 密码: knb6
 
 ### X战警3：背水一战
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-the-last-stand.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-the-last-stand }})
 
 链接: https://pan.baidu.com/s/1i7la0pn 密码: awec
 
 ### 金刚狼2
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-wolverine2.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-wolverine2 }})
 
 链接: https://pan.baidu.com/s/1i7la0pn 密码: awec
 
 ### X战警：逆转未来
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-days-of-future-past.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-days-of-future-past }})
 
 链接: https://pan.baidu.com/s/1i7la0pn 密码: awec
 
 ### X战警:天启
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-apocalypse.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-apocalypse }})
 
 链接: https://pan.baidu.com/s/1nw4oRfN 密码: jivk
 
 ### 金刚狼3
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-wolverine3.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-wolverine3 }})
 
 链接: https://pan.baidu.com/s/1ht1bpNe 密码: 35m2
 
 ### 死侍
 
-![](http://p3oi9yqso.bkt.clouddn.com/2018-02-23-deadpool.jpg)
+![]({{ site.data.oss_images.x-man-to-bingxin-deadpool }})
 
 链接: https://pan.baidu.com/s/1bqh8E0v 密码: g24v

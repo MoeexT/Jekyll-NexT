@@ -75,7 +75,7 @@ except smtplib.SMTPException as e:
     print e
 {% endhighlight %}
 
-接收到的邮件如图：![example-receiver](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example1.png)
+接收到的邮件如图：![example-receiver]({{ site.data.oss_images.cloud-dns-example1 }})
 
 ### 发送附件
 
@@ -126,7 +126,7 @@ except smtplib.SMTPException,e:
     print e 
 {% endhighlight %}
 
-效果图：![example-receiver](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example2.png)
+效果图：![example-receiver]({{ site.data.oss_images.cloud-dns-example2 }})
 
 ### 发送 HTML 附件
 
@@ -181,7 +181,7 @@ except smtplib.SMTPException,e:
 
 {% endhighlight %}
 
-结果（你猜猜内容是啥😄）：![exp3](http://p3oi9yqso.bkt.clouddn.com/2018-01-28-example3.png)
+结果（你猜猜内容是啥😄）：![exp3]({{ site.data.oss_images.cloud-dns-example3 }})
 
 ### 总结
 

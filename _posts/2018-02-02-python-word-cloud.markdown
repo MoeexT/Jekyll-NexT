@@ -63,10 +63,11 @@ plt.show()
 {% endhighlight %}
 
 以下是效果图及对比：
-<div align='center'>
-	<img src="http://p3oi9yqso.bkt.clouddn.com/2018-02-04-sb.jpg" width="209" height="365" alt="害羞的刘洪宇">
-	<img src="http://p3oi9yqso.bkt.clouddn.com/2018-02-04-sb1.png" width="209" height="365" alt="随机彩色">
-	<img src="http://p3oi9yqso.bkt.clouddn.com/2018-02-04-sb2.png" width="209" height="365" alt="原图色">
+
+<div align="center">
+    <img src="{{ site.data.oss_images.word-cloud-sb }}" width="209" height="365" alt="害羞的刘洪宇">
+    <img src="{{ site.data.oss_images.word-cloud-sb1 }}" width="209" height="365" alt="随机彩色">
+    <img src="{{ site.data.oss_images.word-cloud-sb2 }}" width="209" height="365" alt="原图色">
 </div>
 
 ### 中文词云
@@ -114,8 +115,8 @@ plt.show()
 {% endhighlight %}
 
 <div align="center">
-	<img src="http://p3oi9yqso.bkt.clouddn.com/2018-02-04-weibo-ch.jpg" width="320" height="320" alt="中文分词">
-	<img src="http://p3oi9yqso.bkt.clouddn.com/2018-02-04-weibo-en.jpg" width="320" height="320" alt="英文对比">
+	<img src="{{ site.data.oss_images.word-cloud-weibo-ch }}" width="320" height="320" alt="中文分词">
+	<img src="{{ site.data.oss_images.word-cloud-weibo-en }}" width="320" height="320" alt="英文对比">
 </div>
 
 另附：下载微博热搜榜热搜词代码（默认下载三次）。简单的说，这个代码也是一个小爬虫，通过多次刷新热搜榜以获得较多的样本数量，将热搜词爬取下来保存为文本。
