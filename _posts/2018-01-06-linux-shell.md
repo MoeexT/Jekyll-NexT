@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shell 编程基础
-date: 2018-01-05 00:00:00 +0300
+date: 2018-01-06 00:00:00 +0300
 description: 这篇文章主要介绍了Linux编程的基础：基本语法、条件控制、循环等知识的理解。
 categories:
 - Linux

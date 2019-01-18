@@ -2,12 +2,13 @@
 layout: post
 title: X-战警
 description: 大多链接都挂掉了……
-date: x-man-to-bingxin 00:00:00 +0800
+date: 2018-02-23 00:00:00 +0800
 categories:
 - Life
 tags:
 - X 战警
-- 我自己
+- marvel
+- 电影
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: Python 制作词云
 subtitle: 哈哈哈
-date: 2018-02-04 00:00:00 +0800
+date: 2018-02-02 00:00:00 +0800
 description: Python 来做一个高大上的词云
 img: 2018-02-04-cloud.jpg
 categories:
@@ -65,9 +65,9 @@ plt.show()
 以下是效果图及对比：
 
 <div align="center">
-    <img src="{{ site.data.oss_images.word-cloud-sb }}" width="209" height="365" alt="害羞的刘洪宇" style={margin: "0"}>
-    <img src="{{ site.data.oss_images.word-cloud-sb1 }}" width="209" height="365" alt="随机彩色" style={margin: "0"}>
-    <img src="{{ site.data.oss_images.word-cloud-sb2 }}" width="209" height="365" alt="原图色" style={margin: "0"}>
+    <img src="{{ site.data.oss_images.word-cloud-sb }}" width="209" height="365" alt="害羞的刘洪宇">
+    <img src="{{ site.data.oss_images.word-cloud-sb1 }}" width="209" height="365" alt="随机彩色">
+    <img src="{{ site.data.oss_images.word-cloud-sb2 }}" width="209" height="365" alt="原图色">
 </div>
 
 ### 中文词云

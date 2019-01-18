@@ -2,12 +2,11 @@
 layout: post
 title: 数学公式 MathJax
 description: 模板保留的文章，用作以后写作语法的补充
-date: 2018-01-03 00:00:00 +0800
+date: 2014-02-16 00:00:00 +0800
 categories: 
 - Template
 tags: 
-- 资源
-- jekyll
+- 示例
 image: http://gastonsanchez.com/images/blog/mathjax_logo.png
 ---
 

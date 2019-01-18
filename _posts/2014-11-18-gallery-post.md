@@ -2,7 +2,7 @@
 type: photo
 title: gallery-post
 description: 模板保留的文章，测试图片类文章的显示。
-date: 2018-01-03 00:00:00 +0800
+date: 2014-11-18 00:00:00 +0800
 photos:
 - http://ww1.sinaimg.cn/mw690/81b78497jw1emfgwkasznj21hc0u0qb7.jpg
 - http://ww3.sinaimg.cn/mw690/81b78497jw1emfgwjrh2pj21hc0u01g3.jpg
@@ -10,8 +10,9 @@ photos:
 - http://ww3.sinaimg.cn/mw690/81b78497jw1emfgvcdn25j21hc0u0qpa.jpg
 category: 
 - Gallery
+- Template
 tags:
-- 资源
+- 示例
 ---
 
 

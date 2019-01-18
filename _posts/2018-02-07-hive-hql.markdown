@@ -2,7 +2,7 @@
 layout: post
 title: HiveQL
 subtitle: 哈哈哈
-date: 2018-02-06 00:00:00 +0800
+date: 2018-02-07 00:00:00 +0800
 description: 又是一篇烂尾文……
 categories:
 - BigData

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python 自动登陆 WiFi 和 拨号
-date: 2018-01-12 00:00:00 +0300
+date: 2018-01-24 00:00:00 +0300
 description: 用 Python 发送 http 请求实现登陆 WiFi 和拨号
 categories:
 - Python
