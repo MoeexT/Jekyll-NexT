@@ -2,7 +2,7 @@
 layout: post
 title: 在LaTex中使用自定义字体
 date: 2019-02-22 00:00:00 +0800
-description: 踩了太多的坑，终于知道记下来免得以后遇到麻烦。
+description: 
 categories:
 - LaTex
 tags: 
@@ -10,7 +10,11 @@ tags:
 - 字体 
 ---
 
-刚接触LaTex，不太了解，网上搜了好多种方法都一直报错。这个例子刚测试的时候还编译不了，据猜测应该是导入宏包的问题。
+<blockquote class="blockquote-center">
+    先把坑都踩一遍是为了以后踩更多的坑。
+</blockquote>
+
+刚接触LaTex，不太了解，网上搜了好多种方法都一直报错。这个例子刚测试的时候还编译不了，据猜测问题原因应该是编译缓存未清理或导入宏包的问题。
 
 下边是找到的仅有的一种自定义字体的方法，来自[LaTeX技巧006：使用不同的英文字体](https://blog.csdn.net/ProgramChangesWorld/article/details/51502730)
 
