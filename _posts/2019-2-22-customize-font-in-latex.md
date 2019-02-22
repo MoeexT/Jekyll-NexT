@@ -11,7 +11,7 @@ tags:
 ---
 
 <blockquote class="blockquote-center">
-    先把坑都踩一遍是为了以后踩更多的坑。
+    挖坑
 </blockquote>
 
 刚接触LaTex，不太了解，网上搜了好多种方法都一直报错。这个例子刚测试的时候还编译不了，据猜测问题原因应该是编译缓存未清理或导入宏包的问题。

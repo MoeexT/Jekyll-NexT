@@ -64,11 +64,11 @@ plt.show()
 
 以下是效果图及对比：
 
-<div align="center">
+<span class="gp-n">
     <img src="{{ site.data.oss_images.word-cloud-sb }}" width="209" height="365" alt="害羞的刘洪宇">
     <img src="{{ site.data.oss_images.word-cloud-sb1 }}" width="209" height="365" alt="随机彩色">
     <img src="{{ site.data.oss_images.word-cloud-sb2 }}" width="209" height="365" alt="原图色">
-</div>
+</span>
 
 ### 中文词云
 
