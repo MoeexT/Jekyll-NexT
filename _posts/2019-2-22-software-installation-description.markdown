@@ -81,12 +81,16 @@ bundle exec jekyll serve
 可能需要设置这些环境变量：
 
 ```bash
-C_INCLUDE_PATH
-C:\Program\mingw64\include;C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include;
-
-CPLUS_INCLUDE_PATH
-C:\Program\mingw64\include;C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++;C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++\backward;C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++\x86_64-w64-mingw32;
-
 LIBRARY_PATH
 C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0
+
+C_INCLUDE_PATH
+C:\Program\mingw64\include;
+C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include;
+
+CPLUS_INCLUDE_PATH
+C:\Program\mingw64\include;
+C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++;
+C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++\backward;
+C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++\x86_64-w64-mingw32;
 ```
