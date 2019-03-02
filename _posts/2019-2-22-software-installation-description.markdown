@@ -7,6 +7,7 @@ categories:
 - Software
 tags: 
 - C/C++
+- CUDA
 - LaTex
 - GitHub Pages
 - 软件
@@ -94,3 +95,14 @@ C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++;
 C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++\backward;
 C:\Program\mingw64\lib\gcc\x86_64-w64-mingw32\7.3.0\include\c++\x86_64-w64-mingw32;
 ```
+
+## CUDA cuDNN
+
+复制cuDNN到CUDA目录
+
+``` cmd
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudnn64_7.dll
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include\cudnn.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\lib\x64\cudnn.lib
+```
+

@@ -4,9 +4,9 @@
 # ---------------------------------------------------------------
 
 # Site
-title: 这是个什么博客？
-subtitle: 这是个什么标题
-description: 这里不写描述会报错
+title: 鱼客
+subtitle: 从不停止折腾
+description: 她的热切的脸，如夜雨似的，搅扰着我的梦魂。
 author: 鱼丸粗面666 
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -219,7 +219,7 @@ social:
   GitHub: https://github.com/yuwancumian666
   mail: mailto:yuwancumian666@gmail.com
   微博: http://weibo.com/starmon
-  微信:
+  微信: /assets/images/wechat.jpg
 
 
 # Social Links Icons
@@ -239,7 +239,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /assets/images/me.jpg
+avatar: /assets/images/luna.png
 
 
 # Table Of Contents in the Sidebar
@@ -292,10 +292,12 @@ links_title: 友情链接
 links_layout: inline
 links:
   Jekyll-NexT: http://theme-next.simpleyyt.com/
-  Hexo-NexT: http://theme-next.iissnan.com/
   FontAwesome: http://www.fontawesome.com.cn/faicons/
   Jemoji: https://www.webpagefx.com/tools/emoji-cheat-sheet/
-
+  # Rat's Blog: https://www.moerats.com/
+  # Hexo-NexT: http://theme-next.iissnan.com/
+# 秋水逸冰: https://teddysun.com/
+# 就是爱生活: https://www.94ish.me/
 # ---------------------------------------------------------------
 # Post Settings
 # ---------------------------------------------------------------

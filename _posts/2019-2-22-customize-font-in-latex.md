@@ -14,9 +14,11 @@ tags:
     挖坑
 </blockquote>
 
-刚接触LaTex，不太了解，网上搜了好多种方法都一直报错。这个例子刚测试的时候还编译不了，据猜测问题原因应该是编译缓存未清理或导入宏包的问题。
+刚接触LaTex，不太了解编译运行方式，网上搜了好多种方法都一直报错。这个例子刚测试的时候还编译不了，据猜测原因应该是编译缓存未清理或导入宏包的问题。
 
-下边是找到的仅有的一种自定义字体的方法，来自[LaTeX技巧006：使用不同的英文字体](https://blog.csdn.net/ProgramChangesWorld/article/details/51502730)
+## 定义代码段字体
+
+下边是一种自定义字体的方法，来自[LaTeX技巧006：使用不同的英文字体](https://blog.csdn.net/ProgramChangesWorld/article/details/51502730)
 
 {% highlight latex linenos %}
 \documentclass[UTF8]{article}
@@ -42,5 +44,37 @@ Hello World!\\
 
 显示结果
 
-![](https://kxchww.sn.files.1drv.com/y4pax8dqvZMf73-k6bwxCONZDE-xBunsCaXU5yi_fC3KuD95_uO-srbavq59JeWL9T40CeidcOHJ6GI2nT9iDdaa43cab0DIdEljyXameTDztmu97x8noms_9A6kJe97wfnMoBY4w59196zdloPBfKuK2xUYubWintjuRbECeLm1hk9LYEjy_0MhR2tsRaGuexo_KmEfhFU5y3SK7GMaKXn4A/2019-02-22%20-fonts.jpg) 
+![]({{ site.data.images_oss.post_images_2019.fonts }}) 
 
+## 设置全局（自定义）字体
+
+第二天在测试中发现，用如下代码也能实现同样的效果，现在猜测是刚安装的字体VSCode或XeLaTex识别不了的问题。
+
+{% highlight latex linenos %}
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\usepackage{fontspec}
+\usepackage{metalogo}
+\usepackage{amsmath}
+\usepackage{newtxtt, newtxmath}
+
+\setmainfont{CCBackBeat} %英文字体
+\setCJKmainfont{DengXian} % 中文字体
+
+\title{论文测试}
+\author{Teemo}
+\date{2019年2月22日}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{输出测试}
+ Hello \XeLaTeX.
+ Body of the article.
+ second not sure \\
+ fuck LaTex \\
+ 换行试试？\LaTeX，WithTab Icon,How to add a command \\
+
+ 换行
+{% endhighlight %}
+
+![]({{ site.data.images_oss.post_images_2019.font-test }})
